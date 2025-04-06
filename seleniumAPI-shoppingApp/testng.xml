@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SauceDemo Shopping Suite">
+    <listeners>
+        <!-- This listener will generate the HTML report -->
+        <listener class-name="org.testng.reporters.EmailableReporter2" />
+    </listeners>
+    <test name="Cucumber UI Tests">
+        <classes>
+            <class name="runners.TestRunner"/>
+        </classes>
+    </test>
+</suite>
+
